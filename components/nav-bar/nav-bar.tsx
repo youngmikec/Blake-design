@@ -1,8 +1,11 @@
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import styles from './nav-bar.module.css';
 
 export default function NavBar () {
+    const routerObject = useRouter();
+    console.log('router', routerObject);
     return (
         <>
             <div className={`${styles.navbar}`}>
@@ -16,32 +19,46 @@ export default function NavBar () {
                     </div>
 
                     <div className='flex-1 text-right pt-8'>
-                        <span className="mx-4">
-                            <Link href="#">
+                        <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/' ? styles.active : ''}`}>
+                            <Link href="/">
                                 <a>
-                                    <Image src='/images/vectortwitter.png' width="22px" height="22px" alt="twitter account"/>
+                                    Home
                                 </a>
                             </Link>
                         </span>
 
-                        <span className="mx-4">
-                            <Link href="#">
+                        <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/about' ? styles.active : ''}`}>
+                            <Link href="/about">
                                 <a>
-                                    <Image src='/images/vectorinsta.png' width="22px" height="22px" alt="instagram account"/>
+                                    About
                                 </a>
                             </Link>
                         </span>
-                        <span className="mx-4">
-                            <Link href="#">
+                        <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/services' ? styles.active : ''}`}>
+                            <Link href="/services">
                                 <a>
-                                    <Image src='/images/vectorinsta.png' width="22px" height="22px" alt="instagram account"/>
+                                    Services
                                 </a>                            
                             </Link>
                         </span>
-                        <span className="mx-4">
-                            <Link href="#">
+                        <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/portfolio' ? styles.active : ''}`}>
+                            <Link href="/portfolio">
                                 <a>
-                                    <Image src='/images/vectorfacebook.png' width="22px" height="22px" alt="facebook account"/>
+                                    Our portfolio
+                                </a>                            
+                            </Link>
+                        </span>
+                        <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/contact' ? styles.active : ''}`}>
+                            <Link href="/contact">
+                                <a>
+                                    Contact
+                                </a>                            
+                            </Link>
+                        </span>
+                        <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/updates' ? styles.active : ''}`}>
+                            <Link href="/updates">
+                                <a>
+                                    Updates
                                 </a>                            
                             </Link>
                         </span>

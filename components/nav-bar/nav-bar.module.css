@@ -18,3 +18,18 @@
     height: 22px;
     width: 22px;
 }
+
+.navButton {
+    height: 29px;
+    width: 89px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0.2rem 0.4rem;
+}
+
+.active {
+    color: #fff;
+    background: #021B79;
+}

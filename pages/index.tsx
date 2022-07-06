@@ -1,11 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-
-//components
-import TopBar from '../components/top-bar/top-bar';
-import NavBar from '../components/nav-bar/nav-bar';
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
@@ -17,10 +13,10 @@ const Home: NextPage = () => {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
       </Head>
 
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <TopBar/>
         <NavBar/>
-      </main>
+      </main> */}
 
       <footer className={styles.footer}>
         <a

@@ -5,10 +5,9 @@ import styles from './nav-bar.module.css';
 
 export default function NavBar () {
     const routerObject = useRouter();
-    console.log('router', routerObject);
     return (
         <>
-            <div className={`${styles.navbar}`}>
+            <div className={`${styles.navbar} mt-8`}>
                 <div className='container flex justify-between '>
                     <div className='flex-1 text-left pt-4'>
                         <span className="mr-2 ml-0 relative">

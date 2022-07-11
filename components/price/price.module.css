@@ -1,0 +1,12 @@
+.priceWrapper {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    color: #111010;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    height: 580px;
+}

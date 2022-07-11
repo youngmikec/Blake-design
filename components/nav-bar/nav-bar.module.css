@@ -4,7 +4,7 @@
     height: 105px;
     color: #111010;
     font-family: 'Poppins';
-    font-style: normal;
+    font-weight: normal;
 }
 
 .logoText {
@@ -24,7 +24,7 @@
     width: 89px;
     border-radius: 30px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 27px;
     padding: 0.2rem 0.4rem;
 }

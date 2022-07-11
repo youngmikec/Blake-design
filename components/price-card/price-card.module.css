@@ -1,0 +1,12 @@
+.wrapper {
+    background: linear-gradient(180deg, #021B79 0%, #2563EB 100%);
+    color: #ffffff;
+    min-height: 2rem;
+    max-height: max-content;
+    position: absolute;
+    min-width: 25%;
+    bottom: 2rem;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    line-height: 3rem;
+}

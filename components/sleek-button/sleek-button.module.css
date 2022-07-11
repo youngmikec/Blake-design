@@ -1,0 +1,33 @@
+.button {
+    height: 3rem;
+    border-radius: 30px;
+    padding: auto 1rem;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.light {
+    background: #ffffff;
+    color: #021B79;
+}
+
+.dark {
+    background: #021B79;
+    color: #ffffff;
+}
+
+.sm {
+    width: 100px;
+}
+
+.md {
+    width: 130px;
+}
+
+.lg {
+    width: 160px;
+}
+
+.xlg{
+    width: 190px;
+}

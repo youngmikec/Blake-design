@@ -1,0 +1,30 @@
+.card {
+    background-color: #ffffff;
+    color: #00000080;
+    padding: 1.1rem 1.5rem;
+    margin: 1rem auto;
+    max-width: 20rem;
+    min-height: 10rem;
+    border-radius: 35px;
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3); 
+    z-index: inherit;
+}
+
+.cardHeader {
+    text-align: center;
+    margin: 1.2rem auto;
+    padding: .5rem;
+}
+
+.cardBody {
+    text-align: justify;
+    margin: 1.2rem auto;
+    padding: .5rem;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    font-style: normal;
+}

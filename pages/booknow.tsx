@@ -1,8 +1,9 @@
 import Banner from "../components/banner/banner";
 import { CustomCard } from "../components/custom-card/custom-card";
-import styles from '../styles/Home.module.css';
+import Price from "../components/price/price";
+import styles from '../styles/home.module.css';
 
-export default function Services () {
+export default function BookNow () {
     return (
         <>
             <div style={{width: '100%'}}>
@@ -19,6 +20,7 @@ export default function Services () {
                 <div className={styles.divider}></div>
                 <h1 className="h1 text-primary">How may we help you?</h1>
             </div>
+
             <div className={`${styles.servicesPage} mb-32`}>
                 <CustomCard 
                 title="Brand Identity & Graphics Designs"
@@ -56,6 +58,9 @@ export default function Services () {
                 icon='/images/techPerson.png'
                 />
             </div>
+            
+            <Price title='Choose Your Perfect Package' />
+
         </>
     )
 }

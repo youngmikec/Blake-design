@@ -20,6 +20,19 @@
   z-index: 10;
 }
 
+.servicesPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  margin: 0 auto 2rem auto;
+  z-index: 10;
+}
+.divider {
+  width: 40%;
+  height: 5px;
+  border-bottom: 4px solid #021B79;
+  margin: 1rem auto;
+}
 .footer {
   display: flex;
   flex: 1;

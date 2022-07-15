@@ -20,18 +20,32 @@
   z-index: 10;
 }
 
-.servicesPage {
+.clients {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 60%;
-  margin: 0 auto 2rem auto;
-  z-index: 10;
+  /* width: 60%;
+  margin: -5rem auto 2rem auto;
+  z-index: 10; */
 }
+
+.achievements{
+  background-image: url('/images/acheivement.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 500px;
+  color: #ffffff;
+  line-height: 3rem;
+}
+
 .divider {
-  width: 40%;
+  width: 80px;
   height: 5px;
   border-bottom: 4px solid #021B79;
   margin: 1rem auto;
+}
+.textPrimary {
+  color: #021B79;
 }
 .footer {
   display: flex;
@@ -84,6 +98,16 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.customImage {
+  background-image: url('/images/circle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+  min-width: 400px;
+  position: relative;
 }
 
 .grid {

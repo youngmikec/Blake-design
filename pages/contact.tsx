@@ -1,6 +1,5 @@
 import Banner from "../components/banner/banner";
 import Price from "../components/price/price";
-import styles from '../styles/home.module.css';
 
 export default function Contact () {
     return (
@@ -16,7 +15,7 @@ export default function Contact () {
             </div>
 
             <div>
-                <div className={styles.divider}></div>
+                <div className={'divider'}></div>
                 <h1 className="h1 text-primary">How may we help you?</h1>
             </div>
 

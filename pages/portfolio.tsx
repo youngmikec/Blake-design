@@ -1,5 +1,4 @@
 import Banner from "../components/banner/banner";
-import styles from '../styles/home.module.css';
 import Image from "next/image";
 
 export default function Portfolio () {
@@ -16,7 +15,7 @@ export default function Portfolio () {
             </div>
 
             <div>
-                <div className={styles.divider}></div>
+                <div className={'divider'}></div>
                 <h1 className="h1 text-primary">What we love doing</h1>
             </div>
 

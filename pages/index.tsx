@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+
 import Banner from '../components/banner/banner';
+import ClientCard from '../components/client-card/client-card';
 import { CustomCard } from '../components/custom-card/custom-card';
 import Price from '../components/price/price';
+import SleekButton from '../components/sleek-button/sleek-button';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -15,6 +18,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
       </Head>
+
+      {/* Heros section */}
       <div>
         <Banner 
         backgroundColor='rgba(5, 117, 230, 0.55)'
@@ -26,6 +31,7 @@ const Home: NextPage = () => {
         applyOverlay={true} />
       </div>
 
+      {/* Services */}
       <div className={styles.services}>
         <CustomCard 
           title="Brand Identity & Graphics Designs"
@@ -64,23 +70,134 @@ const Home: NextPage = () => {
         />
       </div>
 
+      {/* About us */}
+      <div className='flex justify-start' style={{background: "#E6EDFC"}}>
+        <div className={styles.customImage}>
+          <Image src='/images/customImage.png' width="550px" height="550px" className="rounded absolute top-1 -right-5" alt="customImage" />
+        </div>
+        <div className='w-2/6 ml-40'>
+          <div className='mt-20 text-justify'>
+            <div className={styles.divider} style={{color: "#ffffff", lineHeight: "1rem"}}></div>
+            <h3 className={`h5 ${styles.textPrimary}`}>About us</h3>
+            <h1 className={`h1 ${styles.textPrimary}`}>Giving your Brand the taste it deserved </h1>
+          </div>
+          
+          <div className='text-left my-4'>
+            <p>Blakedesignx is a top notch company in the
+            design world that delivers the best of quality 
+            designs to clients, bringing creativity to reality
+            </p>
 
+            <div className='mt-4'>
+              <SleekButton size='xlg' label='Learn More' mode='light' />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Recent works */}
       <div>
+        <div className='text-center'>
+            <div className={styles.divider} style={{color: "#ffffff"}}></div>
+            <h1 className="h1 text-primary">Our Recent Works</h1>
+        </div>
+        <div>
+
+        </div>
+      </div>
+
+      {/* Price packages */}
+      <div className='mb-20'>
         <Price title='Choose Your Perfect Package' background='#E6EDFC' />
       </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      {/* Acheivements */}
+      <div className={`text-center py-10 ${styles.achievements}`}>
+        <div>
+            <div className={styles.divider} style={{color: "#ffffff"}}></div>
+            <h1 className="h1 text-light">What we acheived</h1>
+        </div>
+
+        <div className='flex justify-between mt-36'>
+          <div className='flex-1 text-center'>
+            <Image src={'/images/Vectorlaptop.png'} height="60px" width="60px" alt="achievement icon" />
+            <h1 className='h1'>1000</h1>
+            <p>Completed Projects</p>
+          </div>
+
+          <div className={`flex-1 text-center`}>
+            <Image src={'/images/Vectorsmiley.png'} height="60px" width="60px" alt="achievement icon" />
+            <h1 className='h1'>800</h1>
+            <p>Happy Clients</p>
+          </div>
+
+          <div className='flex-1 text-center'>
+            <Image src={'/images/Vectorwheel.png'} height="60px" width="60px" alt="achievement icon" />
+            <h1 className='h1'>500</h1>
+            <p>Client Support</p>
+          </div>
+
+          <div className='flex-1 text-center'>
+            <Image src={'/images/Vectordrop.png'} height="60px" width="60px" alt="achievement icon" />
+            <h1 className='h1'>10</h1>
+            <p>Years Of Experience</p>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Clients Feedback */}
+      <div className='container py-32'>
+        <div className='text-center'>
+            <div className={styles.divider} style={{color: "#ffffff"}}></div>
+            <h1 className="h1 text-primary">Our Clients Feedback</h1>
+        </div>
+
+        <div className={styles.clients}>
+          <div>
+            <ClientCard 
+            profileImage='/images/princess.png' 
+            name='Obiamaka Princess' 
+            title='MD Hibiscus Design' 
+            comment='Blake designs has been really amazing,
+            filled with lots of inspirations and motivations
+            His designs has turned my business around 
+            for good..'  />
+          </div>
+          <div>
+            <ClientCard 
+            profileImage='/images/stanley.png' 
+            name='Eze Stanley' 
+            title='MD Stan Digitals' 
+            comment='Blake designs has been really amazing,
+            filled with lots of inspirations and motivations
+            His designs has turned my business around 
+            for good..'  />
+          </div>
+          <div>
+            <ClientCard 
+            profileImage='/images/johnson.png' 
+            name='Ugwu Johnson' 
+            title='MD Jmoney' 
+            comment='Blake designs has been really amazing,
+            filled with lots of inspirations and motivations
+            His designs has turned my business around 
+            for good..'  />
+          </div>
+          <div>
+            <ClientCard 
+            profileImage='/images/arith.png' 
+            name='Elezuo Arith' 
+            title='Ast Hibiscus Design' 
+            comment='Blake designs has been really amazing,
+            filled with lots of inspirations and motivations
+            His designs has turned my business around 
+            for good..'  />
+          </div>
+        </div>
+      </div>
+
+   
     </div>
   )
 }

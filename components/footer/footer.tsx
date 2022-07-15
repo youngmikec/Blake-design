@@ -5,7 +5,7 @@ import styles from './footer.module.css';
 export default function Footer () {
     return (
         <>
-            <div className={styles.footerWrapper}>
+            <div className={`${styles.footerWrapper} mb-0`}>
                 <div className={`${styles.overlay} text-center`}>
                     <div className='w-7/12 mt-24 mx-auto'>
                         <div className='flex justify-between'>
@@ -13,41 +13,29 @@ export default function Footer () {
                                 <h1 className='text-3xl'>Contact Info</h1>
                                 <div className=''>
                                     <p className={`my-4 ${styles.navButton}`}>
-                                        <Link href="/about">
+                                        <Link href="/">
                                             <a>
-                                                About
+                                                <span className='mr-3'><i className="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                                blakedesignx@gmail.com
                                             </a>
                                         </Link>
                                     </p>
                                     <p className={`my-4 ${styles.navButton}`}>
-                                        <Link href="/services">
+                                        <Link href="/">
                                             <a>
-                                                Services
+                                                <span className='mr-3'><i className="fa fa-phone" aria-hidden="true"></i></span>
+                                                +234 810 738 9617
                                             </a>                            
                                         </Link>
                                     </p>
                                     <p className={`my-4 ${styles.navButton}`}>
-                                        <Link href="/portfolio">
+                                        <Link href="/">
                                             <a>
-                                                Our portfolio
+                                                <span className='mr-3'><i className="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                24hrs Avaliable to deliver
                                             </a>                            
                                         </Link>
                                     </p>
-                                    <p className={`my-4 ${styles.navButton}`}>
-                                        <Link href="/contact">
-                                            <a>
-                                                Contact
-                                            </a>                            
-                                        </Link>
-                                    </p>
-                                    <p className={`my-4 ${styles.navButton}`}>
-                                        <Link href="/updates">
-                                            <a>
-                                                New Update
-                                            </a>                            
-                                        </Link>
-                                    </p>
-
                                 </div>
                             </div>
 

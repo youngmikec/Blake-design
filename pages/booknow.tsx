@@ -1,7 +1,7 @@
 import Banner from "../components/banner/banner";
 import { CustomCard } from "../components/custom-card/custom-card";
 import Price from "../components/price/price";
-import styles from '../styles/home.module.css';
+import styles from '../styles/booknow.module.css';
 
 export default function BookNow () {
     return (
@@ -17,7 +17,7 @@ export default function BookNow () {
             </div>
 
             <div>
-                <div className={styles.divider}></div>
+                <div className={'divider'}></div>
                 <h1 className="h1 text-primary">How may we help you?</h1>
             </div>
 

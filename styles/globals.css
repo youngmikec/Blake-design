@@ -37,6 +37,14 @@ a {
   font-size: large;
 }
 
+.h4 {
+  font-size: 30px;
+}
+
+.h5 {
+  font-size: 22px;
+}
+
 .text-primary {
   font-style: normal;
   font-weight: 400;
@@ -50,4 +58,11 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   overflow-x: scroll;
+}
+
+.divider {
+  width: 40%;
+  height: 5px;
+  border-bottom: 4px solid #021B79;
+  margin: 1rem auto;
 }

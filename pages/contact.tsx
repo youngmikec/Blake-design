@@ -1,5 +1,5 @@
 import Banner from "../components/banner/banner";
-import Price from "../components/price/price";
+import FormComp from "../components/form-section";
 
 export default function Contact () {
     return (
@@ -19,7 +19,7 @@ export default function Contact () {
                 <h1 className="h1 text-primary">How may we help you?</h1>
             </div>
 
-            <Price title='Choose Your Perfect Package' background='#E6EDFC' />
+            <FormComp />
 
         </>
     )

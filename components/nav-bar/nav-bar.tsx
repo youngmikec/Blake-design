@@ -54,13 +54,13 @@ export default function NavBar () {
                                 </a>                            
                             </Link>
                         </span>
-                        <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/updates' ? styles.active : ''}`}>
+                        {/* <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/updates' ? styles.active : ''}`}>
                             <Link href="/updates">
                                 <a>
                                     Updates
                                 </a>                            
                             </Link>
-                        </span>
+                        </span> */}
 
                     </div>
                 </div>

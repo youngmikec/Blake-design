@@ -19,6 +19,7 @@ export default function Services () {
                 <div className={styles.divider}></div>
                 <h1 className="h1 text-primary">How may we help you?</h1>
             </div>
+            
             <div className={`${styles.servicesPage} mb-32`}>
                 <CustomCard 
                 title="Brand Identity & Graphics Designs"

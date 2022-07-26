@@ -2,6 +2,17 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
+// Swiper
+import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+// Components
 import Banner from '../components/banner/banner';
 import ClientCard from '../components/client-card/client-card';
 import { CustomCard } from '../components/custom-card/custom-card';
@@ -102,7 +113,46 @@ const Home: NextPage = () => {
             <h1 className="h1 text-primary">Our Recent Works</h1>
         </div>
         <div>
-
+        <div className='container'>
+                <div style={{width: '100%', display: 'inline',  overflow: 'scroll'}}>
+                    <Swiper
+                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        spaceBetween={10}
+                        slidesPerView={3}
+                        navigation
+                        pagination={{ clickable: true }}
+                        scrollbar={{ draggable: true }}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => console.log('slide change')}
+                        >
+                        <SwiperSlide>
+                          <div className='rounded-lg'>
+                            <Image src='/images/book.png' alt="display images" width="300px" height="300px" objectFit='contain' />
+                          </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div className='rounded-lg'>
+                            <Image src='/images/monitor.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
+                          </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div className='rounded-lg'>
+                            <Image src='/images/jotter.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
+                          </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div className='rounded-lg'>
+                            <Image src='/images/flyer.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
+                          </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div className='rounded-lg'>
+                            <Image src='/images/tech-display.png' alt="display images" width="300px" height="300px" objectFit='contain' />
+                          </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </div>
         </div>
       </div>
 

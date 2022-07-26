@@ -26,7 +26,7 @@ export default function Banner ({bannerText, bannerImage, applyOverlay, backgrou
                         </p>
 
                         <div style={{verticalAlign: 'middle'}}>
-                            <SleekButton label='Book Now' mode='light' size="lg" />
+                            <SleekButton label='Book Now' mode='light' size="lg" url="/booknow" />
                         </div>
                     </div>
                 </div>

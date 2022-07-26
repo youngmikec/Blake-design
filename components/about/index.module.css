@@ -1,0 +1,15 @@
+.backgroundImage1 {
+    background-image: url('/images/backgroundImage1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateX(10deg);
+}
+
+.backgroundImage2 {
+    background-image: url('/images/backgroundImage2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotateX(15deg);
+}

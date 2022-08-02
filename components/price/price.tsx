@@ -34,9 +34,10 @@ const Price = ({background, title}: Props) => {
                 position: 'relative'
             }}>
                 <div className='container text-center pt-16'>
+                    <div className={styles.divider} style={{color: "#021B79"}}></div>
                     <h1 className="h1 text-primary">{ title }</h1>
 
-                    <div className="flex justify-between">
+                    <div className="flex justify-center container ">
 
                         { 
                             packages.map((item: PricePackage, index: number) => {

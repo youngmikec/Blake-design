@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/image';
 
 // Swiper
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
+
 
 // swiper styles
 import 'swiper/css';
@@ -19,8 +21,10 @@ import { CustomCard } from '../components/custom-card/custom-card';
 import Price from '../components/price/price';
 import SleekButton from '../components/sleek-button/sleek-button';
 import styles from '../styles/Home.module.css';
+import Achievement from '../components/achievement';
 
 const Home: NextPage = () => {
+  
   return (
     <div style={{width: '100%'}}>
       <Head>
@@ -99,8 +103,8 @@ const Home: NextPage = () => {
             designs to clients, bringing creativity to reality
             </p>
 
-            <div className='mt-4'>
-              <SleekButton size='xlg' label='Learn More' mode='light' />
+            <div className='mt-8'>
+              <SleekButton size='xlg' label='Learn More' mode='dark' url="/about" />
             </div>
           </div>
         </div>
@@ -108,96 +112,70 @@ const Home: NextPage = () => {
 
       {/* Recent works */}
       <div>
-        <div className='text-center'>
+        <div className='text-center py-16'>
             <div className={styles.divider} style={{color: "#ffffff"}}></div>
             <h1 className="h1 text-primary">Our Recent Works</h1>
         </div>
         <div>
-        <div className='container'>
-                <div style={{width: '100%', display: 'inline',  overflow: 'scroll'}}>
-                    <Swiper
-                        modules={[Navigation, Pagination, Scrollbar, A11y]}
-                        spaceBetween={10}
-                        slidesPerView={3}
-                        navigation
-                        pagination={{ clickable: true }}
-                        scrollbar={{ draggable: true }}
-                        onSwiper={(swiper) => console.log(swiper)}
-                        onSlideChange={() => console.log('slide change')}
-                        >
-                        <SwiperSlide>
-                          <div className='rounded-lg'>
-                            <Image src='/images/book.png' alt="display images" width="300px" height="300px" objectFit='contain' />
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <div className='rounded-lg'>
-                            <Image src='/images/monitor.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <div className='rounded-lg'>
-                            <Image src='/images/jotter.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <div className='rounded-lg'>
-                            <Image src='/images/flyer.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <div className='rounded-lg'>
-                            <Image src='/images/tech-display.png' alt="display images" width="300px" height="300px" objectFit='contain' />
-                          </div>
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
-            </div>
+          <div className='container'>
+              <div style={{width: '100%', display: 'inline',  overflow: 'scroll'}}>
+                <Swiper
+                    modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={10}
+                    loop={true}
+                    autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    }}
+                    slidesPerView={3}
+                    navigation
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    >
+                    <SwiperSlide>
+                      <div className='rounded-lg'>
+                        <Image src='/images/book.png' alt="display images" width="300px" height="300px" objectFit='contain' />
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className='rounded-lg'>
+                        <Image src='/images/monitor.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className='rounded-lg'>
+                        <Image src='/images/jotter.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className='rounded-lg'>
+                        <Image src='/images/flyer.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className='rounded-lg'>
+                        <Image src='/images/tech-display.png' alt="display images" width="300px" height="300px" objectFit='contain' />
+                      </div>
+                    </SwiperSlide>
+                </Swiper>
+              </div>
+          </div>
         </div>
       </div>
 
       {/* Price packages */}
-      <div className='mb-20'>
+      <div className='mb-20 pt-32'>
+        
         <Price title='Choose Your Perfect Package' background='#E6EDFC' />
       </div>
 
       {/* Acheivements */}
-      <div className={`text-center py-10 ${styles.achievements}`}>
-        <div>
-            <div className={styles.divider} style={{color: "#ffffff"}}></div>
-            <h1 className="h1 text-light">What we acheived</h1>
-        </div>
-
-        <div className='flex justify-between mt-36'>
-          <div className='flex-1 text-center'>
-            <Image src={'/images/Vectorlaptop.png'} height="60px" width="60px" alt="achievement icon" />
-            <h1 className='h1'>1000</h1>
-            <p>Completed Projects</p>
-          </div>
-
-          <div className={`flex-1 text-center`}>
-            <Image src={'/images/Vectorsmiley.png'} height="60px" width="60px" alt="achievement icon" />
-            <h1 className='h1'>800</h1>
-            <p>Happy Clients</p>
-          </div>
-
-          <div className='flex-1 text-center'>
-            <Image src={'/images/Vectorwheel.png'} height="60px" width="60px" alt="achievement icon" />
-            <h1 className='h1'>500</h1>
-            <p>Client Support</p>
-          </div>
-
-          <div className='flex-1 text-center'>
-            <Image src={'/images/Vectordrop.png'} height="60px" width="60px" alt="achievement icon" />
-            <h1 className='h1'>10</h1>
-            <p>Years Of Experience</p>
-          </div>
-
-        </div>
-      </div>
+      <Achievement />
 
       {/* Clients Feedback */}
-      <div className='container py-32'>
+      <div className='container py-32 -mt-8'>
         <div className='text-center'>
             <div className={styles.divider} style={{color: "#ffffff"}}></div>
             <h1 className="h1 text-primary">Our Clients Feedback</h1>

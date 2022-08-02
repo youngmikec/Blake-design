@@ -9,7 +9,7 @@ export default function NavBar () {
         <>
             <div className={`${styles.navbar} mt-8`}>
                 <div className='container flex justify-between '>
-                    <div className='flex-1 text-left pt-4'>
+                    <div className='flex-1 text-left pt-2'>
                         <span className="mr-2 ml-0 relative">
                             {/* <span className={`${styles.icon} mr-2 mt-1`}><i className="fa fa-envelope-o" aria-hidden="true"></i></span> */}
                             <Image src='/images/official-logo-1.png' alt="official logo" width={'85px'} height={'58px'}/>
@@ -17,7 +17,7 @@ export default function NavBar () {
                         </span>
                     </div>
 
-                    <div className='flex-1 text-right pt-8'>
+                    <div className='flex-1 text-right pt-5'>
                         <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/' ? styles.active : ''}`}>
                             <Link href="/">
                                 <a>
@@ -54,13 +54,6 @@ export default function NavBar () {
                                 </a>                            
                             </Link>
                         </span>
-                        {/* <span className={`mx-3 ${styles.navButton} ${routerObject.pathname === '/updates' ? styles.active : ''}`}>
-                            <Link href="/updates">
-                                <a>
-                                    Updates
-                                </a>                            
-                            </Link>
-                        </span> */}
 
                     </div>
                 </div>

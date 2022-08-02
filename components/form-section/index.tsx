@@ -33,7 +33,7 @@ const FormComp = () => {
                                 </div>
 
                                 <div className="my-12">
-                                    <SleekButton label="Submit" size="lg" mode="dark"/>
+                                    <SleekButton label="Submit" size="lg" mode="light"/>
                                 </div>
                             </form>
                         </div>

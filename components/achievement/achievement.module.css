@@ -1,0 +1,16 @@
+.achievements{
+    background-image: url('/images/acheivement.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    color: #ffffff;
+    line-height: 3rem;
+}
+
+.divider {
+    width: 80px;
+    height: 5px;
+    border-bottom: 4px solid #ffffff;
+    margin: 1rem auto;
+}

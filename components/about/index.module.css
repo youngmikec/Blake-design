@@ -13,3 +13,10 @@
     background-size: cover;
     transform: rotateX(15deg);
 }
+
+.divider {
+    width: 80px;
+    height: 5px;
+    margin-top: .2rem;
+    border-bottom: 4px solid #021B79;
+}

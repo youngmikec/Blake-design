@@ -7,17 +7,19 @@ const AboutUsComp = () => {
             <div className='my-32' >
                 <div className="flex lg:justify-between sm:justify-center">
                     <div className="flex-1 lg:mr-4">
-                        <div className={`${styles.backgroundImage1} py-8`}>
-                            <Image src="/images/group.png" width="500px" height="400px" alt='group-image' />
+                        <div className={`${styles.backgroundImage1} pt-4 pb-8`}>
+                            <Image src="/images/group.png" width="500px" height="500px" alt='group-image' />
                         </div>
                     </div>
-                    <div className="flex-1 lg:ml-4">
+                    <div className="flex-1 lg:ml-8">
                         <div className='relative right-0'>
-                            <div className='relavtive py-4 text-left'>
-                                <div className="divider w-1/12"></div>
-                                <p className="text-blue-900 bg-white my-8 text-2xl absolute -top-3 right-24 px-4">About Us</p>
+                            <div className='py-4 text-left'>
+                                <div className='text-left'>
+                                    <div className={`${styles.divider} relative`}></div>
+                                    <p className="text-[#021B79] bg-white my-8 text-2xl absolute -top-6 left-14  px-4">About Us</p>
+                                </div>
                             </div>
-                            <h1 className='text-4xl text-blue-900 my-4'>Giving your brand <br /> the taste it deserved </h1>
+                            <h1 className='text-4xl text-[#021B79] my-4'>Giving your brand <br /> the taste it deserved </h1>
                             <p className='text-gray-400 my-12'>Blakedesignx is a top notch company in the
                             design world that delivers the best of quality
                             designs to clients, bringing creativity to reality.
@@ -27,9 +29,10 @@ const AboutUsComp = () => {
 
                         <div className='relative right-0'>
                             <div className='relavtive my-4 text-left'>
-                                <div className="divider w-1/12"></div>
-                                <p className="text-blue-900 bg-white my-8 text-2xl absolute -top-11 right-24 px-4">Our Mission</p>
-
+                                <div className='text-left'>
+                                    <div className={`${styles.divider} relative`}></div>
+                                <p className="text-[#021B79] bg-white my-8 text-2xl absolute -top-10 left-14  px-4">Our Mission</p>
+                                </div>
                             </div>
                             <p className='text-gray-400 my-12'>We aspire to be the number one African innovation
                             and technology brand, emerging from the South East.
@@ -44,8 +47,8 @@ const AboutUsComp = () => {
 
                 <div className="flex lg:justify-between sm:justify-center my-16">
                     <div className="flex-1 lg:ml-4">
-                        <div className='w-5/6'>
-                            <h1 className='text-blue-900 text-2xl'>Get to know the founder </h1>
+                        <div className='w-7/12 pt-6'>
+                            <h1 className='text-[#021B79] text-2xl'>Get to know the founder </h1>
 
                             <p className='text-gray-400 my-4'>Joshua Chinonso is the CEO / Lead  of Blake Designs.
                             He is a Tech Enthusiast, Graphics Designer and a Brand identity

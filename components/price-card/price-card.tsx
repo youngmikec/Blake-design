@@ -16,7 +16,7 @@ export function PriceCard ({packageName, services, price}: PricePackage) {
                     services.length > 0 && services.map((service: string, index: number) => <p key={index}>{service}</p>)
                 }
                 <div className='mt-4 mb-6'>
-                    <SleekButton label={price} mode='light' size='md' />
+                    <SleekButton label={price} mode='light' size='md' url="/contact" />
                 </div>
             </div>
         </>

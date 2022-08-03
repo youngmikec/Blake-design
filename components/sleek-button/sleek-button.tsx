@@ -11,7 +11,10 @@ type Props = {
 const SleekButton = ({label, mode, size, url}: Props) => {
 
     const navigate = (url: string) => {
-        Router.push(url);
+        if(url !== undefined || ''){
+            Router.push(url);
+        }
+        return;
     }
     
     return (

@@ -11,7 +11,7 @@ const AboutUsComp = () => {
                             <Image src="/images/group.png" width="500px" height="500px" alt='group-image' />
                         </div>
                     </div>
-                    <div className="flex-1 lg:ml-8">
+                    <div className="flex-1 lg:ml-8 ">
                         <div className='relative right-0'>
                             <div className='py-4 text-left'>
                                 <div className='text-left'>

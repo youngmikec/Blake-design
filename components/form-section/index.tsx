@@ -1,8 +1,37 @@
+import React, {useState} from "react";
 import Image from "next/image";
+import { useForm } from '@formspree/react';
+import { useSnackbar } from "notistack";
+
 import SleekButton from "../sleek-button/sleek-button";
 import styles from './index.module.css';
 
 const FormComp = () => {
+    const [submitted, setSubmitted] = useState<boolean>(false)
+    const [state, handleSubmit] = useForm('contactForm');
+    const { enqueueSnackbar } = useSnackbar();
+
+    const errorAlert = (msg:string) => {
+        return (
+            enqueueSnackbar(msg,{variant:'error'})
+        )
+    }
+
+    const successAlert=(msg:string)=>{
+        return(
+            enqueueSnackbar(msg,{variant:'success'})
+        )
+    }
+
+    if(submitted && state.succeeded){
+        successAlert("Mail sent successfully");
+        setSubmitted(false);
+    }
+    if(submitted && state.errors){
+        successAlert("An error occured while sending mail")
+        setSubmitted(false);
+    }
+    
     return (
         <>
             <div className={`${styles.wrapper} w-full`}>
@@ -15,7 +44,7 @@ const FormComp = () => {
                         </div>
                         <div className="flex-1 text-white mx-4 ">
                             <h3 className="my-8 text-lg">Fill in the form</h3>
-                            <form>
+                            <form onSubmit={handleSubmit} className="text-black">
                                 <div className="my-12">
                                     <input className="w-full rounded-lg border-0 px-6 py-3" type="text" name="name" id="name" placeholder="Your name" />
                                 </div>
@@ -33,7 +62,9 @@ const FormComp = () => {
                                 </div>
 
                                 <div className="my-12">
-                                    <SleekButton label="Submit" size="lg" mode="light"/>
+                                    <div onClick={() => {setSubmitted(true)}}>
+                                        <SleekButton label="Submit" size="lg" mode="light"/>
+                                    </div>
                                 </div>
                             </form>
                         </div>

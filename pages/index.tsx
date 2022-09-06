@@ -47,57 +47,67 @@ const Home: NextPage = () => {
       </div>
 
       {/* Services */}
-      <div className={styles.services}>
-        <CustomCard 
-          title="Brand Identity & Graphics Designs"
-          body='We sketch, create, design professional 
-          logos and brand identity guidelines for 
-          clients. Our delivery time is quick and 
-          our output is your desire.'
-          icon='/images/Vectorpen.png'
-        />
-        <CustomCard 
-          title="UI/UX Design & Development"
-          body='Our iterative design process & focus 
-          on validation ensures you avoid 
-          unnecessary features and costs, 
-          ending with a beautiful app built to 
-          satisfy users.'
-          icon='/images/carbon_application-webtv.png'
-        />
-        <CustomCard 
-          title="Web Design &
-          Development "
-          body='We are a creative team of designers,
-          developers, and strategists, building 
-          elevated websites in the heart of 
-          Silicon Valley.'
-          icon='/images/carbon_application-webtv.png'
-        />
-        <CustomCard 
-          title="Training & Guide"
-          body='Our iterative design process & focus 
-          on validation ensures you avoid 
-          unnecessary features and costs, 
-          ending with a beautiful app built to 
-          satisfy users.'
-          icon='/images/techPerson.png'
-        />
+      <div className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 -mt-16">
+        <div>
+          <CustomCard 
+            title="Brand Identity & Graphics Designs"
+            body='We sketch, create, design professional 
+            logos and brand identity guidelines for 
+            clients. Our delivery time is quick and 
+            our output is your desire.'
+            icon='/images/Vectorpen.png'
+          />
+        </div>
+        <div>
+          <CustomCard 
+            title="UI/UX Design & Development"
+            body='Our iterative design process & focus 
+            on validation ensures you avoid 
+            unnecessary features and costs, 
+            ending with a beautiful app built to 
+            satisfy users.'
+            icon='/images/carbon_application-webtv.png'
+          />
+        </div>
+        <div>
+          <CustomCard 
+            title="Web Design &
+            Development "
+            body='We are a creative team of designers,
+            developers, and strategists, building 
+            elevated websites in the heart of 
+            Silicon Valley.'
+            icon='/images/carbon_application-webtv.png'
+          />
+        </div>
+        <div>
+          <CustomCard 
+            title="Training & Guide"
+            body='Our iterative design process & focus 
+            on validation ensures you avoid 
+            unnecessary features and costs, 
+            ending with a beautiful app built to 
+            satisfy users.'
+            icon='/images/techPerson.png'
+          />
+        </div>
       </div>
 
-      {/* About us */}
-      <div className='flex justify-start' style={{background: "#E6EDFC"}}>
-        <div className={styles.customImage}>
-          <Image src='/images/customImage.png' width="550px" height="550px" className="rounded absolute top-1 -right-5" alt="customImage" />
+      {/* About us */}.
+      <div className='w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2' style={{background: "#E6EDFC"}}>
+        <div className='w-full mx-auto'>
+          <div className="relative border-8 border-[#021B79] rounded-full text-center w-max mx-auto sm:mx-0 md:mx-0 lg:mx-0">
+            <Image src='/images/customImage.png' width="350px" height="350px" layout='intrinsic' className="rounded absolute top-1 -right-5" alt="customImage" />
+          </div>
         </div>
-        <div className='w-2/6 ml-40'>
+        <div className='w-4/6 md:w-5/6 lg:w-5/6 mx-auto md:mx-8'>
           <div className='mt-20 text-justify'>
             <div className={styles.divider} style={{color: "#ffffff", lineHeight: "1rem"}}></div>
             <h3 className={`h5 ${styles.textPrimary}`}>About us</h3>
-            <h1 className={`h1 ${styles.textPrimary}`}>Giving your Brand the taste it deserved </h1>
+            <h1 className={`h4 lg:h1 ${styles.textPrimary}`}>Giving your Brand the taste it deserved </h1>
           </div>
           
-          <div className='text-left my-4'>
+          <div className='text-center md:text-left lg:text-left my-4'>
             <p>Blakedesignx is a top notch company in the
             design world that delivers the best of quality 
             designs to clients, bringing creativity to reality
@@ -111,63 +121,62 @@ const Home: NextPage = () => {
       </div>
 
       {/* Recent works */}
-      <div>
+      <div className='mb-20 h-max'>
         <div className='text-center py-16'>
             <div className={styles.divider} style={{color: "#ffffff"}}></div>
             <h1 className="h1 text-primary">Our Recent Works</h1>
         </div>
         <div>
           <div className='container'>
-              <div style={{width: '100%', display: 'inline',  overflow: 'scroll'}}>
-                <Swiper
-                    modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={10}
-                    loop={true}
-                    autoplay={{
-                      delay: 2500,
-                      disableOnInteraction: false,
-                    }}
-                    slidesPerView={3}
-                    navigation
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
-                    >
-                    <SwiperSlide>
-                      <div className='rounded-lg'>
-                        <Image src='/images/book.png' alt="display images" width="300px" height="300px" objectFit='contain' />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className='rounded-lg'>
-                        <Image src='/images/monitor.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className='rounded-lg'>
-                        <Image src='/images/jotter.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className='rounded-lg'>
-                        <Image src='/images/flyer.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className='rounded-lg'>
-                        <Image src='/images/tech-display.png' alt="display images" width="300px" height="300px" objectFit='contain' />
-                      </div>
-                    </SwiperSlide>
-                </Swiper>
-              </div>
+            <div style={{width: '100%', display: 'inline',  overflow: 'scroll'}}>
+              <Swiper
+                  modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+                  spaceBetween={10}
+                  loop={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  slidesPerView={3}
+                  navigation
+                  pagination={{ clickable: true }}
+                  scrollbar={{ draggable: true }}
+                  onSwiper={(swiper) => console.log(swiper)}
+                  onSlideChange={() => console.log('slide change')}
+                  >
+                  <SwiperSlide>
+                    <div className='rounded-lg'>
+                      <Image src='/images/book.png' alt="display images" width="300px" height="300px" objectFit='contain' />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='rounded-lg'>
+                      <Image src='/images/monitor.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='rounded-lg'>
+                      <Image src='/images/jotter.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='rounded-lg'>
+                      <Image src='/images/flyer.png' className='rounded-lg' alt="display images" width="300px" height="300px" objectFit='contain' />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='rounded-lg'>
+                      <Image src='/images/tech-display.png' alt="display images" width="300px" height="300px" objectFit='contain' />
+                    </div>
+                  </SwiperSlide>
+              </Swiper>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Price packages */}
       <div className='mb-20 pt-32'>
-        
         <Price title='Choose Your Perfect Package' background='#E6EDFC' />
       </div>
 
@@ -181,8 +190,8 @@ const Home: NextPage = () => {
             <h1 className="h1 text-primary">Our Clients Feedback</h1>
         </div>
 
-        <div className={styles.clients}>
-          <div>
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+          <div className='sm:mx-4'>
             <ClientCard 
             profileImage='/images/princess.png' 
             name='Obiamaka Princess' 
@@ -192,7 +201,7 @@ const Home: NextPage = () => {
             His designs has turned my business around 
             for good..'  />
           </div>
-          <div>
+          <div className='sm:mx-4'>
             <ClientCard 
             profileImage='/images/stanley.png' 
             name='Eze Stanley' 
@@ -202,7 +211,7 @@ const Home: NextPage = () => {
             His designs has turned my business around 
             for good..'  />
           </div>
-          <div>
+          <div className='sm:mx-4'>
             <ClientCard 
             profileImage='/images/johnson.png' 
             name='Ugwu Johnson' 
@@ -212,7 +221,7 @@ const Home: NextPage = () => {
             His designs has turned my business around 
             for good..'  />
           </div>
-          <div>
+          <div className='sm:mx-4'>
             <ClientCard 
             profileImage='/images/arith.png' 
             name='Elezuo Arith' 

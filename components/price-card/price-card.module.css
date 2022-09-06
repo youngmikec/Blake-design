@@ -11,3 +11,11 @@
     padding: 2rem 0.5rem;
     line-height: 4rem;
 }
+
+@media screen and (max-width: 771px) {
+    .wrapper{
+        position: inherit;
+        top: 2rem;
+        min-height: 620px;
+    }
+}

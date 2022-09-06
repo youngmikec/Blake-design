@@ -19,7 +19,7 @@ export default function Portfolio () {
                 <h1 className="h1 text-primary">What we love doing</h1>
             </div>
 
-            <div className="grid">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                 <div className="mx-8 my-4">
                     <Image src='/images/app.png' height="400px" width="400px" alt="previous works"/>
                 </div>

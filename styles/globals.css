@@ -61,11 +61,11 @@ a {
   margin: 1rem auto;
 }
 
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   overflow-x: scroll;
-}
+} */
 
 .divider {
   width: 40%;

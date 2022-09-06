@@ -16,7 +16,7 @@ export default function Contact () {
 
             <div>
                 <div className={'divider'}></div>
-                <h1 className="h1 text-primary">How may we help you?</h1>
+                <h1 className="h5 md:h1  text-primary">How may we help you?</h1>
             </div>
 
             <FormComp />

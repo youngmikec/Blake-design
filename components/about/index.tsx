@@ -5,7 +5,7 @@ const AboutUsComp = () => {
     return (
         <>
             <div className='my-32' >
-                <div className="flex lg:justify-between sm:justify-center">
+                <div className={`${styles.infoWrapper}`}>
                     <div className="flex-1 lg:mr-4">
                         <div className={`${styles.backgroundImage1} pt-4 pb-8`}>
                             <Image src="/images/group.png" width="500px" height="500px" alt='group-image' />
@@ -45,9 +45,9 @@ const AboutUsComp = () => {
                     </div>
                 </div>
 
-                <div className="flex lg:justify-between sm:justify-center my-16">
+                <div className={`my-16 ${styles.infoWrapper}`}>
                     <div className="flex-1 lg:ml-4">
-                        <div className='w-7/12 pt-6'>
+                        <div className='lg:w-7/12 pt-6'>
                             <h1 className='text-[#021B79] text-2xl'>Get to know the founder </h1>
 
                             <p className='text-gray-400 my-4'>Joshua Chinonso is the CEO / Lead  of Blake Designs.

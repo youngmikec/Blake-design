@@ -24,8 +24,29 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
-  margin: 4rem auto 2rem auto;
+  margin: 4rem 2rem 2rem 2rem;
   z-index: 10;
+}
+
+@media screen and (max-width: 814px) {
+  .servicesPage {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: 4rem auto 2rem auto;
+    z-index: 10;
+  }
+  
+}
+@media screen and (max-width: 814px) {
+  .servicesPage {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: 4rem auto 2rem auto;
+    z-index: 10;
+  }
+  
 }
 
 .clients {
@@ -116,6 +137,19 @@
   min-height: 400px;
   min-width: 400px;
   position: relative;
+}
+
+@media screen and (max-width: 765px) {
+  .customImage {
+    background-image: url('/images/circle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
 }
 
 .grid {

@@ -36,13 +36,13 @@ const FormComp = () => {
         <>
             <div className={`${styles.wrapper} w-full`}>
                 <div className="container py-32 w-full">
-                    <div className="flex justify-between">
-                        <div className="flex-1 text-left mx-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
+                        <div className="text-left mx-4">
                             <div className="pt-8 rounded-xlg">
                                 <Image className="rounded-lg" src="/images/contact2.png" width="500px" height="740px" alt="form-picture" />
                             </div>
                         </div>
-                        <div className="flex-1 text-white mx-4 ">
+                        <div className="text-white mx-4 ">
                             <h3 className="my-8 text-lg">Fill in the form</h3>
                             <form onSubmit={handleSubmit} className="text-black">
                                 <div className="my-12">

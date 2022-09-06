@@ -7,10 +7,10 @@ export default function Footer () {
         <>
             <div className={`${styles.footerWrapper} mb-0`}>
                 <div className={`${styles.overlay} text-center`}>
-                    <div className='w-7/12 mt-24 mx-auto'>
+                    <div className='lg:w-7/12 sm:w-9/12 w-10/12 mt-24 mx-auto'>
                         <div className='flex justify-between'>
                             <div className='flex-1 text-left'>
-                                <h1 className='text-3xl'>Contact Info</h1>
+                                <h1 className='lg:text-3xl text-xl'>Contact Info</h1>
                                 <div className=''>
                                     <p className={`my-4 ${styles.navButton}`}>
                                         <Link href="/">
@@ -40,7 +40,7 @@ export default function Footer () {
                             </div>
 
                             <div className='flex-1 text-right'>
-                                <h1 className='text-3xl'>Quick links</h1>
+                                <h1 className='lg:text-3xl text-xl'>Quick links</h1>
                                 <div className=''>
                                     <p className={`my-4 ${styles.navButton}`}>
                                         <Link href="/about">
@@ -83,7 +83,7 @@ export default function Footer () {
                         </div>
                     </div>
 
-                    <div className='text-center'>
+                    <div className='lg:w-7/12 sm:w-9/12 w-10/12 mt-24 mx-auto lg:text-center text-left'>
                         <div className='mt-4 text-black pt-8'>
                             <span className="mx-4">
                                 <Link href="#">

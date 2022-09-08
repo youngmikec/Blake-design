@@ -17,7 +17,7 @@
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
   margin: -5rem auto 2rem auto;
-  z-index: 10;
+  z-index: 20;
 }
 
 .servicesPage {
@@ -25,7 +25,7 @@
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
   margin: 4rem 2rem 2rem 2rem;
-  z-index: 10;
+  z-index: 20;
 }
 
 @media screen and (max-width: 814px) {

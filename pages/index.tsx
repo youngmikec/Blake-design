@@ -47,7 +47,7 @@ const Home: NextPage = () => {
       </div>
 
       {/* Services */}
-      <div className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 -mt-16">
+      <div className="container -mt-24 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         <div>
           <CustomCard 
             title="Brand Identity & Graphics Designs"

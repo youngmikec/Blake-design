@@ -17,7 +17,7 @@
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
   margin: -5rem auto 2rem auto;
-  z-index: 20;
+  z-index: 50;
 }
 
 .servicesPage {

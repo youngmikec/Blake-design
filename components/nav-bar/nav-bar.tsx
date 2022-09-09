@@ -83,8 +83,8 @@ export default function NavBar () {
                     </div>
                     <div className="ml-8 text-center">
                         <span className="mr-2 ml-0 relative">
-                            <Image src='/images/official-logo-1.png' alt="official logo" width={'85px'} height={'58px'}/>
-                            <span className={`${styles.logoText} absolute bottom-5`}>Blakedesignx</span>
+                            <Image src='/images/official-logo-1.png' alt="official logo" width={'30px'} height={'28px'}/>
+                            <span className={`${styles.logoText} absolute bottom-3`}>Blakedesignx</span>
                         </span>
                     </div>
                 </div>
@@ -95,40 +95,40 @@ export default function NavBar () {
                     ${showSideBar ? 'block' : 'hidden'}
                  `}>
                     <div className="container text-right">
-                        <button className="text-black text-3xl" onClick={() => closeSidebar()} >
+                        <button className="text-black text-xl" onClick={() => closeSidebar()} >
                             <FaTimes />
                         </button>
 
                         <ul className="list-none">
-                            <li className="py-8 text-xl hover:bg-gray-50">
+                            <li className="py-4 text-lg hover:bg-gray-50" onClick={() => closeSidebar()}>
                                 <Link href="/">
                                     <a>
                                         Home
                                     </a>
                                 </Link>
                             </li>
-                            <li className="py-8 text-xl hover:bg-gray-50">
+                            <li className="py-4 text-lg hover:bg-gray-50" onClick={() => closeSidebar()}>
                                 <Link href="/about">
                                     <a>
                                         About
                                     </a>
                                 </Link>
                             </li>
-                            <li className="py-8 text-xl hover:bg-gray-50">
+                            <li className="py-4 text-lg hover:bg-gray-50" onClick={() => closeSidebar()}>
                                 <Link href="/services">
                                     <a>
                                         Services
                                     </a>                            
                                 </Link>
                             </li>
-                            <li className="py-8 text-xl hover:bg-gray-50">
+                            <li className="py-4 text-lg hover:bg-gray-50" onClick={() => closeSidebar()}>
                                 <Link href="/portfolio">
                                     <a>
                                         Our portfolio
                                     </a>                            
                                 </Link>
                             </li>
-                            <li className="py-8 text-xl hover:bg-gray-50">
+                            <li className="py-4 text-lg hover:bg-gray-50" onClick={() => closeSidebar()}>
                                 <Link href="/contact">
                                     <a>
                                         Contact

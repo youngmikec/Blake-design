@@ -46,4 +46,10 @@
         line-height: 20px;
         padding: 0.2rem 0.3rem;
     } 
+    .logoText {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 15px;
+        margin-top: -15px;
+    }
 }

@@ -33,9 +33,9 @@ const Price = ({background, title}: Props) => {
                 backgroundColor: background ? background : '#ffffff',
                 position: 'relative'
             }}>
-                <div className='container text-center pt-16'>
+                <div className='container text-center pt-8'>
                     <div className={styles.divider} style={{color: "#021B79"}}></div>
-                    <h1 className="h1 text-primary">{ title }</h1>
+                    <h1 className="text-[#021B79] text-3xl md:text-4xl py-4">{ title }</h1>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 container ">
 

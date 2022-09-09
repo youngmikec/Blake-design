@@ -40,26 +40,26 @@ const Achievement = () => {
                     <h1 className="h1 text-light">What we acheived</h1>
                 </div>
 
-                <div className='flex justify-between mt-36'>
-                <div className='flex-1 text-center'>
+                <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 mt-20'>
+                <div className='text-center'>
                     <Image src={'/images/Vectorlaptop.png'} height="60px" width="60px" alt="achievement icon" />
                     <h1 className='h1'>{projectsCount}</h1>
                     <p>Completed Projects</p>
                 </div>
 
-                <div className={`flex-1 text-center`}>
+                <div className={`text-center`}>
                     <Image src={'/images/Vectorsmiley.png'} height="60px" width="60px" alt="achievement icon" />
                     <h1 className='h1'>{clientsCount}</h1>
                     <p>Happy Clients</p>
                 </div>
 
-                <div className='flex-1 text-center'>
+                <div className='text-center'>
                     <Image src={'/images/Vectorwheel.png'} height="60px" width="60px" alt="achievement icon" />
                     <h1 className='h1'>{supportCount}</h1>
                     <p>Client Support</p>
                 </div>
 
-                <div className='flex-1 text-center'>
+                <div className='text-center'>
                     <Image src={'/images/Vectordrop.png'} height="60px" width="60px" alt="achievement icon" />
                     <h1 className='h1'>{experienceCount}</h1>
                     <p>Years Of Experience</p>

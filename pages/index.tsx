@@ -100,20 +100,20 @@ const Home: NextPage = () => {
             <Image src='/images/customImage.png' width="350px" height="350px" layout='intrinsic' className="rounded absolute top-1 -right-5" alt="customImage" />
           </div>
         </div>
-        <div className='w-4/6 md:w-5/6 lg:w-5/6 mx-auto md:mx-8'>
+        <div className='w-5/6 md:w-5/6 lg:w-5/6 mx-auto md:mx-8'>
           <div className='mt-20 text-justify'>
             <div className={styles.divider} style={{color: "#ffffff", lineHeight: "1rem"}}></div>
-            <h3 className={`h5 ${styles.textPrimary}`}>About us</h3>
-            <h1 className={`h4 lg:h1 ${styles.textPrimary}`}>Giving your Brand the taste it deserved </h1>
+            <h3 className={`h5 ${styles.textPrimary} text-center`}>About us</h3>
+            <h1 className={`h4 lg:h1 ${styles.textPrimary} text-center`}>Giving your Brand the taste it deserved </h1>
           </div>
           
-          <div className='text-center md:text-left lg:text-left my-4'>
+          <div className='text-justify md:text-left lg:text-left my-4'>
             <p>Blakedesignx is a top notch company in the
             design world that delivers the best of quality 
             designs to clients, bringing creativity to reality
             </p>
 
-            <div className='mt-8'>
+            <div className='mt-8 text-center'>
               <SleekButton size='xlg' label='Learn More' mode='dark' url="/about" />
             </div>
           </div>
@@ -121,10 +121,10 @@ const Home: NextPage = () => {
       </div>
 
       {/* Recent works */}
-      <div className='mb-20 h-max'>
-        <div className='text-center py-16'>
+      <div className='mb-16 h-max'>
+        <div className='text-center py-10'>
             <div className={styles.divider} style={{color: "#ffffff"}}></div>
-            <h1 className="h1 text-primary">Our Recent Works</h1>
+            <h1 className="text-sm text-primary">Our Recent Works</h1>
         </div>
         <div>
           <div className='container'>
@@ -176,7 +176,7 @@ const Home: NextPage = () => {
       </div>
 
       {/* Price packages */}
-      <div className='mb-20 pt-32'>
+      <div className='mb-20 pt-10'>
         <Price title='Choose Your Perfect Package' background='#E6EDFC' />
       </div>
 
@@ -184,10 +184,10 @@ const Home: NextPage = () => {
       <Achievement />
 
       {/* Clients Feedback */}
-      <div className='container py-32 -mt-8'>
+      <div className='container py-6 -mt-8'>
         <div className='text-center'>
             <div className={styles.divider} style={{color: "#ffffff"}}></div>
-            <h1 className="h1 text-primary">Our Clients Feedback</h1>
+            <h1 className="text-primary">Our Clients Feedback</h1>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">

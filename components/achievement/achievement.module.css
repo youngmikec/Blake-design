@@ -14,3 +14,15 @@
     border-bottom: 4px solid #ffffff;
     margin: 1rem auto;
 }
+
+@media screen and (max-width: 600px){
+    .achievements{
+        background-image: url('/images/acheivement.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: max-content;
+        color: #ffffff;
+        line-height: 3rem;
+    }
+}

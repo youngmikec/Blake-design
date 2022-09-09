@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { BsBehance, BsInstagram } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
+import { TbBrandTwitter } from 'react-icons/tb';
 import styles from './top-bar.module.css';
 
 export default function TopBar () {
@@ -32,27 +35,35 @@ export default function TopBar () {
                             </Link>
                         </span>
 
-                        <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4">
-                            <Link href="#">
-                                <a>
-                                    <Image src='/images/vectorinsta.png' width="18px" height="18px" alt="instagram account"/>
-                                </a>
-                            </Link>
-                        </span>
-                        <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4">
-                            <Link href="#">
-                                <a>
-                                    <Image src='/images/vectorinsta.png' width="18px" height="18px" alt="instagram account"/>
-                                </a>                            
-                            </Link>
-                        </span>
-                        <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4">
-                            <Link href="#">
-                                <a>
-                                    <Image src='/images/vectorfacebook.png' width="18px" height="18px" alt="facebook account"/>
-                                </a>                            
-                            </Link>
-                        </span>
+                        <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4 inline-block">
+                                <Link href="#">
+                                    <a className="text-lg sm:text-xl">
+                                        <TbBrandTwitter />
+                                    </a>
+                                </Link>
+                            </span>
+
+                            <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4 inline-block">
+                                <Link href="#">
+                                    <a className="text-lg sm:text-xl">
+                                        <BsInstagram />
+                                    </a>
+                                </Link>
+                            </span>
+                            <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4 inline-block">
+                                <Link href="#">
+                                    <a className="text-lg sm:text-xl">
+                                        <BsBehance />
+                                    </a>                            
+                                </Link>
+                            </span>
+                            <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4 inline-block">
+                                <Link href="#">
+                                    <a className="text-lg sm:text-xl">
+                                        <FaFacebookF />
+                                    </a>                            
+                                </Link>
+                            </span>
 
                     </div>
                 </div>

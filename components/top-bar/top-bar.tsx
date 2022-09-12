@@ -36,7 +36,7 @@ export default function TopBar () {
                         </span>
 
                         <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4 inline-block">
-                                <Link href="#">
+                                <Link href="https://twitter.com/Blake_jrs?s=09">
                                     <a className="text-lg sm:text-xl">
                                         <TbBrandTwitter />
                                     </a>
@@ -44,21 +44,21 @@ export default function TopBar () {
                             </span>
 
                             <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4 inline-block">
-                                <Link href="#">
+                                <Link href="https://www.instagram.com/blakedesignx">
                                     <a className="text-lg sm:text-xl">
                                         <BsInstagram />
                                     </a>
                                 </Link>
                             </span>
                             <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4 inline-block">
-                                <Link href="#">
+                                <Link href="https://www.behance.net/joshuachinonso">
                                     <a className="text-lg sm:text-xl">
                                         <BsBehance />
                                     </a>                            
                                 </Link>
                             </span>
                             <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4 inline-block">
-                                <Link href="#">
+                                <Link href="https://facebook.com/Blake-Designx-n-Hub-107875180988508/?paipv=1&_rdc=10&_rdr">
                                     <a className="text-lg sm:text-xl">
                                         <FaFacebookF />
                                     </a>                            

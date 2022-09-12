@@ -141,7 +141,7 @@ export default function NavBar () {
                     <div className="text-center">
                         <div className='flext justify-between pt-8 text-[#021B79]'>
                             <span className="mx-2 inline-block">
-                                <Link href="#">
+                                <Link href="https://twitter.com/Blake_jrs?s=09">
                                     <a className="text-lg sm:text-xl">
                                         <TbBrandTwitter />
                                     </a>
@@ -149,21 +149,21 @@ export default function NavBar () {
                             </span>
 
                             <span className="mx-2 inline-block">
-                                <Link href="#">
+                                <Link href="https://www.instagram.com/blakedesignx">
                                     <a className="text-lg sm:text-xl">
                                         <BsInstagram />
                                     </a>
                                 </Link>
                             </span>
                             <span className="mx-2 inline-block">
-                                <Link href="#">
+                                <Link href="https://www.behance.net/joshuachinonso">
                                     <a className="text-lg sm:text-xl">
                                         <BsBehance />
                                     </a>                            
                                 </Link>
                             </span>
                             <span className="mx-2 inline-block">
-                                <Link href="#">
+                                <Link href="https://facebook.com/Blake-Designx-n-Hub-107875180988508/?paipv=1&_rdc=10&_rdr">
                                     <a className="text-lg sm:text-xl">
                                         <FaFacebookF />
                                     </a>                            

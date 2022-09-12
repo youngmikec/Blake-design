@@ -6,7 +6,7 @@ export default function Contact () {
         <>
             <div style={{width: '100%'}}>
                 <Banner 
-                backgroundColor='transparent'
+                backgroundColor='rgba(5, 117, 230, 0.55)'
                 bannerImage='/images/contact-image.png' 
                 bannerText={`
                     Contact Us Now

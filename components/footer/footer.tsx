@@ -1,6 +1,10 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from './footer.module.css';
+
+// react icons
+import { FaTimes, FaFacebookF } from 'react-icons/fa';
+import { TbBrandTwitter } from 'react-icons/tb';
+import { BsInstagram, BsBehance } from 'react-icons/bs';
 
 export default function Footer () {
     return (
@@ -8,8 +12,8 @@ export default function Footer () {
             <div className={`${styles.footerWrapper} mb-0`}>
                 <div className={`${styles.overlay} text-center`}>
                     <div className='lg:w-7/12 sm:w-9/12 w-11/12 mt-24 mx-auto'>
-                        <div className='flex justify-between'>
-                            <div className='flex-1 text-left'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
+                            <div className='text-left'>
                                 <h1 className='lg:text-3xl text-xl'>
                                     <b>Contact Info</b>
                                 </h1>
@@ -39,33 +43,33 @@ export default function Footer () {
                                         </Link>
                                     </p>
                                 </div>
-                                <div className='mt-1 text-black pt-4'>
+                                <div className='mt-1 text-black pt-4 flex justify-start'>
                                     <span className="mx-2">
-                                        <Link href="#">
+                                        <Link href="https://twitter.com/Blake_jrs?s=09">
                                             <a>
-                                                <Image src='/images/vectortwitter-dark.png' width="18.33px" height="18.33px" alt="twitter account"/>
+                                                <TbBrandTwitter />
                                             </a>
                                         </Link>
                                     </span>
 
                                     <span className="mx-2">
-                                        <Link href="#">
+                                        <Link href="https://www.instagram.com/blakedesignx">
                                             <a>
-                                                <Image src='/images/vectorinsta-dark.png' width="18.33px" height="18.33px" alt="instagram account"/>
+                                                <BsInstagram />
                                             </a>
                                         </Link>
                                     </span>
                                     <span className="mx-2">
-                                        <Link href="#">
+                                        <Link href="https://www.behance.net/joshuachinonso">
                                             <a>
-                                                <Image src='/images/vectorbehance-dark.png' width="18.33px" height="18.33px" alt="instagram account"/>
+                                                <BsBehance />
                                             </a>                            
                                         </Link>
                                     </span>
                                     <span className="mx-2">
-                                        <Link href="#">
+                                        <Link href="https://facebook.com/Blake-Designx-n-Hub-107875180988508/?paipv=1&_rdc=10&_rdr">
                                             <a>
-                                                <Image src='/images/Vectorfacebook-dark.png' width="18.33px" height="18.33px" alt="facebook account"/>
+                                                <FaFacebookF />
                                             </a>                            
                                         </Link>
                                     </span>
@@ -73,11 +77,11 @@ export default function Footer () {
                                 </div>
                             </div>
 
-                            <div className='flex-1 text-right'>
+                            <div className='text-left sm:text-right md:text-right lg:text-right mt-8 sm:mt-0 md:mt-0 lg:mt-0'>
                                 <h1 className='lg:text-3xl text-xl'>
                                     <b>Quick links</b>
                                 </h1>
-                                <div className=''>
+                                <div className='ml-4 sm:m-0 md:m-0 lg:m-0'>
                                     <p className={`my-4 ${styles.navButton}`}>
                                         <Link href="/about">
                                             <a className='text-sm'>
@@ -115,9 +119,6 @@ export default function Footer () {
                         </div>
                     </div>
 
-                    <div className='lg:w-7/12 sm:w-9/12 w-10/12 mt-24 mx-auto lg:text-center text-left'>
-                        
-                    </div>
                 </div>
             </div>
         </>

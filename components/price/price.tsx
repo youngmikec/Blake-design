@@ -54,7 +54,7 @@ const Price = ({background, title}: Props) => {
                         { 
                             packages.map((item: PricePackage, index: number) => {
                                 
-                                return <div className="flex-1 container" key={index}>
+                                return <div className="container" key={index}>
                                     <PriceCard packageName={item.packageName} price={item.price} services={item.services} />
                                 </div>
                             })

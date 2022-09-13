@@ -1,7 +1,7 @@
 .button {
     height: max-content;
     border-radius: 30px;
-    padding: auto 1rem;
+    padding: .7rem 1rem;
     font-size: 22px;
     font-weight: bold;
 }
@@ -30,4 +30,14 @@
 
 .xlg{
     width: 190px;
+}
+
+@media screen and (max-width: 770px) {
+    .button {
+        height: max-content;
+        border-radius: 30px;
+        padding: .8rem 1rem;
+        font-size: 22px;
+        font-weight: bold;
+    }
 }

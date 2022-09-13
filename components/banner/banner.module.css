@@ -57,7 +57,7 @@
     vertical-align: middle;
     color: #ffffff;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     justify-content: center;
     z-index: 5;
     /* background: transparent; */

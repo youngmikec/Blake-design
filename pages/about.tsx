@@ -27,19 +27,22 @@ export default function About () {
                         onSlideChange={() => console.log('slide change')}
                         >
                         <SwiperSlide>
-                            <Image src='/images/phones.png' alt="display images" width="600px" height="500px" />
+                            <Image src='/images/mobile_apps.png' alt="display images" width="600px" height="500px" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src='/images/app.png' alt="display images" width="600px" height="500px" />
+                            <Image src='/images/praise.png' alt="display images" width="600px" height="500px" />
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src='/images/frame.png' alt="display images" width="600px" height="500px" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src='/images/contact-image.png' alt="display images" width="600px" height="500px" />
+                            <Image src='/images/phones.png' alt="display images" width="600px" height="500px" />
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image src='/images/contact-image.png' alt="display images" width="600px" height="500px" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src='/images/app.png' alt="display images" width="600px" height="500px" />
                         </SwiperSlide>
                     </Swiper>
                 </div>

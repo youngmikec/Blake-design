@@ -21,7 +21,7 @@ export default function Portfolio () {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                 <div className="mx-8 my-4">
-                    <Image src='/images/app.png' height="400px" width="400px" alt="previous works"/>
+                    <Image src='/images/talent_hunt.png' height="400px" width="400px" alt="previous works"/>
                 </div>
                 <div className="mx-8 my-4">
                     <Image src='/images/tech-display.png' height="400px" width="400px" alt="previous works"/>
@@ -36,10 +36,10 @@ export default function Portfolio () {
                     <Image src='/images/frame.png' height="400px" width="400px" alt="previous works"/>
                 </div>
                 <div className="mx-8 my-4">
-                    <Image src='/images/flyer.png' height="400px" width="400px" alt="previous works"/>
+                    <Image src='/images/youth.png' height="400px" width="400px" alt="previous works"/>
                 </div>
                 <div className="mx-8 my-4">
-                    <Image src='/images/poster.png' height="400px" width="400px" alt="previous works"/>
+                    <Image src='/images/praise.png' height="400px" width="400px" alt="previous works"/>
                 </div>
                 <div className="mx-8 my-4">
                     <Image src='/images/jotter.png' height="400px" width="400px" alt="previous works"/>

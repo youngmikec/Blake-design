@@ -27,13 +27,6 @@ export default function TopBar () {
                     </div>
 
                     <div className='flex-1 text-right py-3'>
-                        <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4">
-                            <Link href="#">
-                                <a>
-                                    <Image src='/images/vectortwitter.png' width="18px" height="18px" alt="twitter account"/>
-                                </a>
-                            </Link>
-                        </span>
 
                         <span className="mx-2 sm:mx-3 md:mx-4 lg:mx-4 inline-block">
                                 <Link href="https://twitter.com/Blake_jrs?s=09">

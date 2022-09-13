@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import { BsDropletHalf } from "react-icons/bs";
+
 import styles from './achievement.module.css';
 
 const Achievement = () => {
@@ -60,7 +62,10 @@ const Achievement = () => {
                 </div>
 
                 <div className='text-center'>
-                    <Image src={'/images/Vectordrop.png'} height="60px" width="60px" alt="achievement icon" />
+                    <div className="mx-auto w-4/12 mb-5">
+                        <BsDropletHalf style={{fontSize: '60px'}} />
+                    </div>
+                    {/* <Image src={'/images/Vectordrop.png'} height="60px" width="60px" alt="achievement icon" /> */}
                     <h1 className='h1'>{experienceCount}</h1>
                     <p>Years Of Experience</p>
                 </div>

@@ -9,8 +9,8 @@
 
 .cardTitle {
     color: #021B79;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 1.15rem;
+    line-height: 20px;
 }
 
 .cardSubTitle {
@@ -27,3 +27,11 @@
     text-align: justify;
     color: #000000;
 }
+
+/* @media screen and (max-width: 770px) {
+    .cardTitle {
+        color: #021B79;
+        font-size: 20px;
+        line-height: 20px;
+    }
+} */

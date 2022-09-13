@@ -16,6 +16,7 @@
     .wrapper{
         position: inherit;
         top: 2rem;
-        min-height: 620px;
+        /* min-height: 620px; */
+        min-height: max-content;
     }
 }

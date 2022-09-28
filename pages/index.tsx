@@ -123,8 +123,8 @@ const Home: NextPage = () => {
       {/* Recent works */}
       <div className='mb-16 h-max'>
         <div className='text-center py-10'>
-            <div className={styles.divider} style={{color: "#ffffff"}}></div>
-            <h1 className="text-sm text-primary">Our Recent Works</h1>
+            <div className="divider" style={{color: "#ffffff"}}></div>
+            <h1 className="text-[#021B79] text-2xl sm:text-2xl md:text-3xl lg:text-3xl">Our Recent Works</h1>
         </div>
         <div>
           <div className='container'>
@@ -185,9 +185,9 @@ const Home: NextPage = () => {
 
       {/* Clients Feedback */}
       <div className='container py-6 -mt-8'>
-        <div className='text-center'>
-            <div className={styles.divider} style={{color: "#ffffff"}}></div>
-            <h1 className="text-primary">Our Clients Feedback</h1>
+        <div className='text-center my-8'>
+            <div className="divider" style={{color: "#ffffff"}}></div>
+            <h1 className="text-[#021B79] text-2xl sm:text-2xl md:text-3xl lg:text-3xl">Our Clients Feedback</h1>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">

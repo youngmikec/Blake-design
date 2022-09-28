@@ -14,9 +14,9 @@ export default function Contact () {
                 applyOverlay={true} />
             </div>
 
-            <div>
-                <div className={'divider'}></div>
-                <h1 className="h5 md:h1  text-primary">How may we help you?</h1>
+            <div className="my-8">
+                <div className="divider"></div>
+                <h1 className="h5 md:h1 mt-0 text-[#021B79] text-2xl sm:text-2xl md:text-3xl lg:text-3xl">How may we help you?</h1>
             </div>
 
             <FormComp />

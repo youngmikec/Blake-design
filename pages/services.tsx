@@ -15,9 +15,9 @@ export default function Services () {
                 applyOverlay={true} />
             </div>
 
-            <div>
-                <div className={styles.divider}></div>
-                <h1 className="h1 text-primary">How may we help you?</h1>
+            <div className="mt-12">
+                <div className="divider"></div>
+                <h1 className="h1 text-[#021B79] text-2xl sm:text-2xl md:text-3xl lg:text-3xl">How may we help you?</h1>
             </div>
             
             <div className={`${styles.servicesPage} mb-32`}>

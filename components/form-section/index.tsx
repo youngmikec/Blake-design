@@ -35,7 +35,7 @@ const FormComp = () => {
     return (
         <>
             <div className={`${styles.wrapper} w-full`}>
-                <div className="container py-32 w-full">
+                <div className="container py-8 sm:py-16 md:py-24 lg:py-32 w-full">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                         <div className="text-left mx-4">
                             <div className="pt-8 rounded-xlg">

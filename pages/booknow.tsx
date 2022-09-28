@@ -50,9 +50,9 @@ export default function BookNow () {
                 </div>
             </div>
 
-            <div>
-                <div className={'divider'}></div>
-                <h1 className="h1 text-primary">How may we help you?</h1>
+            <div className='my-12'>
+                <div className="divider"></div>
+                <h1 className="h1 text-[#021B79] text-2xl sm:text-2xl md:text-3xl lg:text-3xl">How may we help you?</h1>
             </div>
 
             <div className={`grid grid-cols-1 space-x-2 container lg:space-x-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-16`}>

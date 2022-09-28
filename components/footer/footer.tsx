@@ -11,13 +11,13 @@ export default function Footer () {
         <>
             <div className={`${styles.footerWrapper} mb-0`}>
                 <div className={`${styles.overlay} text-center`}>
-                    <div className='lg:w-7/12 sm:w-9/12 w-11/12 mt-24 mx-auto'>
-                        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
+                    <div className='lg:w-7/12 sm:w-9/12 w-11/12 my-24 mx-auto'>
+                        <div className='mx-auto w-11/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
                             <div className='text-left'>
                                 <h1 className='lg:text-3xl text-xl'>
                                     <b>Contact Info</b>
                                 </h1>
-                                <div className=''>
+                                <div className='-ml-1 sm:m-0 md:m-0 lg:m-0'>
                                     <p className={`my-4 ${styles.navButton}`}>
                                         <Link href="/">
                                             <a>
@@ -81,7 +81,7 @@ export default function Footer () {
                                 <h1 className='lg:text-3xl text-xl'>
                                     <b>Quick links</b>
                                 </h1>
-                                <div className='ml-4 sm:m-0 md:m-0 lg:m-0'>
+                                <div className='ml-1 sm:m-0 md:m-0 lg:m-0'>
                                     <p className={`my-4 ${styles.navButton}`}>
                                         <Link href="/about">
                                             <a className='text-sm'>

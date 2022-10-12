@@ -62,38 +62,38 @@ export default function NavBar () {
                     </div>
 
                     <div className='flex-2 text-right pt-2'>
-                        <span className={`mx-1 ${styles.navButton} ${routerObject.pathname === '/' ? styles.active : ''}`}>
+                        <span className={`mx-1 text-xl p-2 ${styles.navButton} ${routerObject.pathname === '/' ? styles.active : ''}`}>
                             <Link href="/">
-                                <a>
+                                <a className='text-lg'>
                                     Home
                                 </a>
                             </Link>
                         </span>
 
-                        <span className={`mx-1 ${styles.navButton} ${routerObject.pathname === '/about' ? styles.active : ''}`}>
+                        <span className={`mx-1 text-xl p-2 ${styles.navButton} ${routerObject.pathname === '/about' ? styles.active : ''}`}>
                             <Link href="/about">
-                                <a>
+                                <a className='text-lg'>
                                     About
                                 </a>
                             </Link>
                         </span>
-                        <span className={`mx-1 ${styles.navButton} ${routerObject.pathname === '/services' ? styles.active : ''}`}>
+                        <span className={`mx-1 text-xl p-2 ${styles.navButton} ${routerObject.pathname === '/services' ? styles.active : ''}`}>
                             <Link href="/services">
-                                <a>
+                                <a className='text-lg'>
                                     Services
                                 </a>                            
                             </Link>
                         </span>
-                        <span className={`mx-1 ${styles.navButton} ${routerObject.pathname === '/portfolio' ? styles.active : ''}`}>
+                        <span className={`mx-1 text-xl p-2 ${styles.navButton} ${routerObject.pathname === '/portfolio' ? styles.active : ''}`}>
                             <Link href="/portfolio">
-                                <a>
+                                <a className='text-lg'>
                                     Our portfolio
                                 </a>                            
                             </Link>
                         </span>
-                        <span className={`mx-1 ${styles.navButton} ${routerObject.pathname === '/contact' ? styles.active : ''}`}>
+                        <span className={`mx-1 text-xl p-2 ${styles.navButton} ${routerObject.pathname === '/contact' ? styles.active : ''}`}>
                             <Link href="/contact">
-                                <a>
+                                <a className='text-lg'>
                                     Contact
                                 </a>                            
                             </Link>
